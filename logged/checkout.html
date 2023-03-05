@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <script src="script.js" charset="utf-8"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title></title>
+</head>
+<style media="screen">
+.inline-group {
+    max-width: 9rem;
+    padding: .5rem;
+  }
+  .inline-group .form-control {
+    text-align: center;
+  }
+  .form-control[type="number"]::-webkit-inner-spin-button,
+  .form-control[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
+  <body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #219653">
+    <div class="container-fluid">
+    <a class="navbar-brand ml-5 font-poppins" href="#" style="font-weight: bold;">HELLO UDA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal font-popins">
+        <li class="nav-item">
+          <a class="nav-link fs-5" style="font-weight: bold;" href="index.html" aria-label="Homepage">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="event.html" aria-label="A sample content page">
+            Event
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
+            Books
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
+            T-Shirts
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-nav " style="margin-right: 90px;">
+        <div class="user-block">
+           <img class="img-circle " src="../dist/img/user1-128x128.jpg" alt="user image">
+              <span class="username">
+                <a href="#" class="text-white">Jonathan Burke Jr.</a>
+              </span>
+            <span class="description text-white">Langganan | <text style="color: #F2C94C;">1000 Point</text></span>
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<style media="screen">
+  input[type=checkbox]{
+    transform:scale(2.0);
+  }
+</style>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body p-0">
+            <p class="text-bold fw-700 ml-2" style="font-size: 24px;">Cart</p>
+          <div class="mailbox-controls">
+            <!-- Check all button -->
+            <!-- <button type="button" class=" ml-1 btn btn-default btn-sm checkbox-toggle mr-2"><i class="far fa-square"></i>
+            </button> -->
+            <div class="form-check ml-3 mt-2">
+            <input class="form-check-input " type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+               Pilih Semua
+            </label>
+            <div class="float-right mr-4">
+              <a class="text-danger text-poppins" style="font-size: 16px;" href="#">Hapus</a>
+            </div>
+            </div>
+            <br>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input " type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+               Events
+            </label>
+            </div>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input px-2" type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+              <div >
+              <img src="../asset/pp.jpg" width="150px" style="float:left; margin-right:10px;" alt="user image">
+                  <p class="ml-2">Training Kotlin Basic | 17 NOVEMBER 2021 1:00 SIANG TO 26 NOVEMBER 2021 5:00 SORE
+                    <br>
+                    <button class="btn btn-success mt-3" type="button" name="button">50% </button>
+                    <del style="color: #BDBDBD; font-size: 14px;" class="ml-3 text-poppins">Rp 150.000</del>
+                    <span class="ml-2 mr-4">Rp 75.000
+                    </span>
+                      <button class="btn btn-outline-success btn-minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                        <input class="form quantity col-md-1" min="0" name="quantity" value="1" type="number">
+                      <button class="btn btn-outline-success btn-plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                      <a href="#" class="ml-2 btn btn-danger"><i class="fa fa-trash"></i></a>
+                  </p>
+                  <hr class="mt-0 mb-0">
+                <br>
+              </div>
+            </label>
+            </div>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input " type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+               Books
+            </label>
+            </div>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input px-2" type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+              <div >
+              <img src="../asset/pp.jpg" width="150px" style="float:left; margin-right:10px;" alt="user image">
+                  <p class="ml-2 text-justify">Training Kotlin Basic | 17 NOVEMBER 2021 1:00 SIANG TO 26 NOVEMBER 2021 5:00 SORE
+                    <br>
+                    <button class="btn btn-success mt-3" type="button" name="button">50% </button>
+                    <del style="color: #BDBDBD; font-size: 14px;" class="ml-3 text-poppins">Rp 150.000</del>
+                    <span class="ml-2 mr-4">Rp 75.000
+                    </span>
+                      <button class="btn btn-outline-success btn-minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                        <input class="form quantity col-md-1" min="0" name="quantity" value="1" type="number">
+                      <button class="btn btn-outline-success btn-plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                      <a href="#" class="ml-2 btn btn-danger"><i class="fa fa-trash"></i></a>
+                  </p>
+                  <hr class="mb-0">
+                <br>
+              </div>
+            </label>
+            </div>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input px-2" type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+              <div >
+              <img src="../asset/pp.jpg" width="150px" style="float:left; margin-right:10px;" alt="user image">
+                  <p class="ml-2 text-justify">Training Kotlin Basic | 17 NOVEMBER 2021 1:00 SIANG TO 26 NOVEMBER 2021 5:00 SORE
+                    <br>
+                    <button class="btn btn-success mt-3" type="button" name="button">50% </button>
+                    <del style="color: #BDBDBD; font-size: 14px;" class="ml-3 text-poppins">Rp 150.000</del>
+                    <span class="ml-2 mr-4">Rp 75.000
+                    </span>
+                      <button class="btn btn-outline-success btn-minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                        <input class="form quantity col-md-1" min="0" name="quantity" value="1" type="number">
+                      <button class="btn btn-outline-success btn-plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                      <a href="#" class="ml-2 btn btn-danger"><i class="fa fa-trash"></i></a>
+                  </p>
+                  <hr>
+                <br>
+              </div>
+            </label>
+            </div>
+
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input " type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+               T - Shirts
+            </label>
+            </div>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input px-2" type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+              <div >
+              <img src="../asset/pp.jpg" width="150px" style="float:left; margin-right:10px;" alt="user image">
+                  <p class="ml-2 text-justify">Training Kotlin Basic | 17 NOVEMBER 2021 1:00 SIANG TO 26 NOVEMBER 2021 5:00 SORE
+                    <br>
+                    <button class="btn btn-success mt-3" type="button" name="button">50% </button>
+                    <del style="color: #BDBDBD; font-size: 14px;" class="ml-3 text-poppins">Rp 150.000</del>
+                    <span class="ml-2 mr-4">Rp 75.000
+                    </span>
+                      <button class="btn btn-outline-success btn-minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                        <input class="form quantity col-md-1" min="0" name="quantity" value="1" type="number">
+                      <button class="btn btn-outline-success btn-plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                      <a href="#" class="ml-2 btn btn-danger"><i class="fa fa-trash"></i></a>
+                  </p>
+                  <hr class="mb-0">
+                <br>
+              </div>
+            </label>
+            </div>
+            <div class="form-check ml-3 mt-0 mb-3">
+            <input class="form-check-input px-2" type="checkbox" value="" id="check1">
+            <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+              <div >
+              <img src="../asset/pp.jpg" width="150px" style="float:left; margin-right:10px;" alt="user image">
+                  <p class="ml-2 text-justify">Training Kotlin Basic | 17 NOVEMBER 2021 1:00 SIANG TO 26 NOVEMBER 2021 5:00 SORE
+                    <br>
+                    <button class="btn btn-success mt-3" type="button" name="button">50% </button>
+                    <del style="color: #BDBDBD; font-size: 14px;" class="ml-3 text-poppins">Rp 150.000</del>
+                    <span class="ml-2 mr-4">Rp 75.000
+                    </span>
+                      <button class="btn btn-outline-success btn-minus">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                        <input class="form quantity col-md-1" min="0" name="quantity" value="1" type="number">
+                      <button class="btn btn-outline-success btn-plus">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                      <a href="#" class="ml-2 btn btn-danger"><i class="fa fa-trash"></i></a>
+                  </p>
+                  <hr>
+                <br>
+              </div>
+            </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="card ">
+        <div class="card-body">
+          <dl>
+            <dt>Belanjaan Saya</dt>
+            <dd>Total Belanja (5 barang)</dd>
+            <p class="mb-0">Total Harga: <span class="float-right">Rp 375.000</span></p>
+            <p class="mt-0 mb-0">Total Diskon: <span class="float-right">Rp 375.000</span></p>
+            <p class="mt-0">Point: <span class="float-right">0</span></p>
+            <hr>
+            <p class="mt-0">Total: <span class="float-right" style="color: #219653; font-size: 18px">Rp 375.000</span></p>
+            <a href="checkout-modal.html" class="btn btn-success btn-block">Beli Sekarang</a>
+            <button class="btn btn-outline-success btn-block text-left" ><i class="fa fa-credit-card"></i>  &nbspPoint Ku</button>
+          </dl>
+        </div>
+    </div>
+    </div>
+
+
+  </div>
+  </div>
+  <section class="mt-5">
+      <footer class="text-center text-lg-start" style="background-color: #219653;">
+        <img src="../asset/logo.png" class="mt-5" style="width: 280px; height: 100px;" alt="">
+        <p class="text-white">IT Training and Software Development</p>
+        <div class="container d-flex justify-content-center py-5 ">
+          <button class="btn btn btn-lg btn-floating mx-0" style="color: white; background-color: #219653;">
+            <i class="fab fa-linkedin"></i>
+          </button>
+          <button class="btn btn btn-lg btn-floating mx-0" style="color: white; background-color: #219653;">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button class="btn btn btn-lg btn-floating mx-0" style="color: white; background-color: #219653;">
+            <i class="fab fa-instagram"></i>
+          </button>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+         © 2018-2020 Udacaoding. All rights reserved.
+        </div>
+        <!-- Copyright -->
+      </footer>
+  </section>
+  </body>
+</html>
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<script>
+  $(function () {
+    //Enable check and uncheck all functionality
+    $('.checkbox-toggle').click(function () {
+      var clicks = $(this).data('clicks')
+      if (clicks) {
+        //Uncheck all checkboxes
+        $('.mailbox-messages input[type=\'checkbox\']').prop('checked', false)
+        $('.checkbox-toggle .far.fa-check-square').removeClass('fa-check-square').addClass('fa-square')
+      } else {
+        //Check all checkboxes
+        $('.mailbox-messages input[type=\'checkbox\']').prop('checked', true)
+        $('.checkbox-toggle .far.fa-square').removeClass('fa-square').addClass('fa-check-square')
+      }
+      $(this).data('clicks', !clicks)
+    })
+
+    //Handle starring for font awesome
+    $('.mailbox-star').click(function (e) {
+      e.preventDefault()
+      //detect type
+      var $this = $(this).find('a > i')
+      var fa    = $this.hasClass('fa')
+
+      //Switch states
+      if (fa) {
+        $this.toggleClass('fa-star')
+        $this.toggleClass('fa-star-o')
+      }
+    })
+  })
+</script>

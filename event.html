@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #219653">
+  <div class="container-fluid">
+    <a class="navbar-brand ml-5 font-poppins" href="#" style="font-weight: bold;">HELLO UDA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 list-group list-group-horizontal font-popins">
+        <li class="nav-item">
+          <a class="nav-link fs-5" style="font-weight: bold;" href="index.html" aria-label="Homepage">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="event.html" aria-label="A sample content page">
+            Event
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
+            Books
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="system.html" aria-label="A system message page">
+            T-Shirts
+          </a>
+        </li>
+      </ul>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="auth/login.html">Login</a>
+      <a class="nav-item nav-link" href="#">|</a>
+      <a class="nav-item nav-link" href="auth/register.html">Register</a>
+    </div>
+  </div>
+</nav>
+
+<style media="screen">
+
+  input[type=radio]{
+    transform:scale(2.0);
+  }
+  input[type=checkbox]{
+    transform:scale(2.0);
+  }
+</style>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <p class="text-bold" style="font-size: 25px">Sort by</p>
+          <div class="row">
+                  <div class="col lg-6">                    <!-- radio -->
+                    <div class="form-group ">
+                      <div class="icheck-danger d-inline">
+                        <input type="radio" name="r2"  id="radioDanger1">
+                        <label class="ml-3" for="radioDanger1">Baru Rilis</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                        <div class="col lg-6">                    <!-- radio -->
+                          <div class="form-group ">
+                            <div class="icheck-danger d-inline ">
+                              <input type="radio" name="r2"  id="radioDanger1">
+                              <label class="ml-3" for="radioDanger1"> Diskon</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                              <div class="col lg-6">                    <!-- radio -->
+                                <div class="form-group ">
+                                  <div class="icheck-danger d-inline">
+                                    <input type="radio" name="r2"  id="radioDanger1">
+                                    <label class="ml-3" for="radioDanger1">Umum </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col lg-6">                    <!-- radio -->
+                                      <div class="form-group ">
+                                        <div class="icheck-danger d-inline">
+                                          <input type="radio" name="r2"  id="radioDanger1">
+                                          <label class="ml-3" for="radioDanger1">Men </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                          <div class="col lg-6">                    <!-- radio -->
+                                            <div class="form-group ">
+                                              <div class="icheck-danger d-inline">
+                                                <input type="radio" name="r2"  id="radioDanger1">
+                                                <label class="ml-3" for="radioDanger1">Women </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                              <p class="text-bold" style="font-size: 25px">Type Class</p>
+                                <div class="row">
+                                  <div class="col lg-6">                    <!-- radio -->
+                                    <div class="form-group ">
+                                      <div class="icheck-danger d-inline">
+                                        <input type="radio" name="r2"  id="radioDanger1">
+                                        <label class="ml-3" for="radioDanger1">Online</label>
+                                      </div>
+                                   </div>
+                                </div>
+                              </div>
+                             <div class="row">
+                                <div class="col lg-6">                    <!-- radio -->
+                                  <div class="form-group ">
+                                    <div class="icheck-danger d-inline">
+                                      <input type="radio" name="r2"  id="radioDanger1">
+                                      <label class="ml-3" for="radioDanger1">Offline</label>
+                                    </div>
+                                   </div>
+                                  </div>
+                                </div>
+
+                              <p class="text-bold" style="font-size: 25px">Kategori</p>
+                              <div class="form-check mb-3">
+                              <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label ml-2 text-bold" for="flexCheckDefault">
+                                 Kotlin
+                              </label>
+                              </div>
+                              <div class="form-check mb-3">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                              <label class="form-check-label ml-2 text-bold" for="flexCheckChecked">
+                                Flutter
+                              </label>
+                              </div>
+                              <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                              <label class="form-check-label ml-2 text-bold" for="flexCheckChecked">
+                                Swift
+                              </label>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+
+                    <div class="col-md-10">
+                      <form action="simple-results.html">
+                          <div class="input-group">
+                              <input type="search" class="form-control form-control-lg" placeholder="Apa yang ingin kamu cari?">
+                              <div class="input-group-append">
+                                  <button type="submit" class="btn btn-lg btn-default">
+                                      <i class="fa fa-search"></i>
+                                  </button>
+                              </div>
+                          </div>
+                      </form>
+                      <div class="row">
+                      <div class="row mt-5 ml-2">
+                        <div class="card" style="width: 18rem;">
+                          <div class="pojok-kiri">
+                            <a class="text-white">Online</a>
+                          </div>
+                          <div class="ribbon-wrapper ribbon">
+                            <div class="ribbon bg-primary">
+                              Umum
+                            </div>
+                          </div>
+                           <img class="card-img-top" src="asset/gambar.jpeg" >
+                           <div class="card-body">
+                             <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                             <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                                 26 NOVEMBER 2021 5:00 SORE</p>
+                                 <div class="personal">
+                                   <p class="text-bold">
+                                   <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                                   Raeihan Alvaro</p>
+                                 </div>
+                             <p class="text-bold mb-0">Price</p>
+                             <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                             <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                             <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                             <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                             <div class="arrow">
+                               <a href="training/details.html" class="btn btn text-white" style="width: 40px; height: 40px;">
+                                >
+                              </a>
+                             </div>
+                        </div>
+
+                      </div>
+                      <div class="row ml-5">
+                        <div class="card" style="width: 18rem;">
+                          <div class="pojok-kiri">
+                            <a class="text-white">Online</a>
+                          </div>
+                          <div class="ribbon-wrapper ribbon">
+                            <div class="ribbon text-white" style="background-color: #F2994A">
+                              Men
+                            </div>
+                          </div>
+                           <img class="card-img-top" src="asset/gambar.jpeg" >
+                           <div class="card-body">
+                             <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                             <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                                 26 NOVEMBER 2021 5:00 SORE</p>
+                                 <div class="personal">
+                                   <p class="text-bold">
+                                   <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                                   Raeihan Alvaro</p>
+                                 </div>
+                             <p class="text-bold mb-0">Price</p>
+                             <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                             <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                             <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                             <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                             <div class="arrow">
+                              <a class="btn btn text-white" style="width: 40px; height: 40px;">
+                               >
+                             </a>
+                             </div>
+                        </div>
+
+                      </div>
+                      <div class="row  ml-5">
+                        <div class="card" style="width: 18rem;">
+                          <div class="pojok-kiri">
+                            <a class="text-white">Online</a>
+                          </div>
+                          <div class="ribbon-wrapper ribbon">
+                            <div class="ribbon text-white" style="background-color: #EB5757">
+                              Women
+                            </div>
+                          </div>
+                           <img class="card-img-top" src="asset/gambar.jpeg" >
+                           <div class="card-body">
+                             <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                             <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                                 26 NOVEMBER 2021 5:00 SORE</p>
+                                 <div class="personal">
+                                   <p class="text-bold">
+                                   <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                                   Raeihan Alvaro</p>
+                                 </div>
+                             <p class="text-bold mb-0">Price</p>
+                             <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                             <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                             <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                             <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                             <div class="arrow">
+                               <a class="btn btn text-white" style="width: 40px; height: 40px;">
+                                 >
+                               </a>
+                             </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                <div class="row mt-5 ml-2">
+                  <div class="card" style="width: 18rem;">
+                    <div class="pojok-kiri">
+                      <a class="text-white">Online</a>
+                    </div>
+                    <div class="ribbon-wrapper ribbon">
+                      <div class="ribbon bg-primary">
+                        Umum
+                      </div>
+                    </div>
+                     <img class="card-img-top" src="asset/gambar.jpeg" >
+                     <div class="card-body">
+                       <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                       <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                           26 NOVEMBER 2021 5:00 SORE</p>
+                           <div class="personal">
+                             <p class="text-bold">
+                             <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                             Raeihan Alvaro</p>
+                           </div>
+                       <p class="text-bold mb-0">Price</p>
+                       <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                       <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                       <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                       <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                       <div class="arrow">
+                         <button class="btn btn text-white" style="width: 40px; height: 40px;">
+                          >
+                         </button>
+                       </div>
+                  </div>
+
+                </div>
+                <div class="row ml-5">
+                  <div class="card" style="width: 18rem;">
+                    <div class="pojok-kiri">
+                      <a class="text-white">Online</a>
+                    </div>
+                    <div class="ribbon-wrapper ribbon">
+                      <div class="ribbon text-white" style="background-color: #F2994A">
+                        Men
+                      </div>
+                    </div>
+                     <img class="card-img-top" src="asset/gambar.jpeg" >
+                     <div class="card-body">
+                       <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                       <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                           26 NOVEMBER 2021 5:00 SORE</p>
+                           <div class="personal">
+                             <p class="text-bold">
+                             <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                             Raeihan Alvaro</p>
+                           </div>
+                       <p class="text-bold mb-0">Price</p>
+                       <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                       <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                       <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                       <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                       <div class="arrow">
+                        <button class="btn btn text-white" style="width: 40px; height: 40px;">
+                         >
+                        </button>
+                       </div>
+                  </div>
+
+                </div>
+                <div class="row  ml-5">
+                  <div class="card" style="width: 18rem;">
+                    <div class="pojok-kiri">
+                      <a class="text-white">Online</a>
+                    </div>
+                    <div class="ribbon-wrapper ribbon">
+                      <div class="ribbon text-white" style="background-color: #EB5757">
+                        Women
+                      </div>
+                    </div>
+                     <img class="card-img-top" src="asset/gambar.jpeg" >
+                     <div class="card-body">
+                       <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                       <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                           26 NOVEMBER 2021 5:00 SORE</p>
+                           <div class="personal">
+                             <p class="text-bold">
+                             <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                             Raeihan Alvaro</p>
+                           </div>
+                       <p class="text-bold mb-0">Price</p>
+                       <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                       <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                       <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                       <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                       <div class="arrow">
+                         <button class="btn btn text-white" style="width: 40px; height: 40px;">
+                           >
+                         </button>
+                       </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="row mt-5 ml-2">
+            <div class="card" style="width: 18rem;">
+              <div class="pojok-kiri">
+                <a class="text-white">Online</a>
+              </div>
+              <div class="ribbon-wrapper ribbon">
+                <div class="ribbon bg-primary">
+                  Umum
+                </div>
+              </div>
+               <img class="card-img-top" src="asset/gambar.jpeg" >
+               <div class="card-body">
+                 <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                 <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                     26 NOVEMBER 2021 5:00 SORE</p>
+                     <div class="personal">
+                       <p class="text-bold">
+                       <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                       Raeihan Alvaro</p>
+                     </div>
+                 <p class="text-bold mb-0">Price</p>
+                 <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                 <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                 <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                 <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                 <div class="arrow">
+                   <button class="btn btn text-white" style="width: 40px; height: 40px;">
+                    >
+                   </button>
+                 </div>
+            </div>
+
+          </div>
+          <div class="row ml-5">
+            <div class="card" style="width: 18rem;">
+              <div class="pojok-kiri">
+                <a class="text-white">Online</a>
+              </div>
+              <div class="ribbon-wrapper ribbon">
+                <div class="ribbon text-white" style="background-color: #F2994A">
+                  Men
+                </div>
+              </div>
+               <img class="card-img-top" src="asset/gambar.jpeg" >
+               <div class="card-body">
+                 <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                 <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                     26 NOVEMBER 2021 5:00 SORE</p>
+                     <div class="personal">
+                       <p class="text-bold">
+                       <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                       Raeihan Alvaro</p>
+                     </div>
+                 <p class="text-bold mb-0">Price</p>
+                 <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                 <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                 <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                 <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                 <div class="arrow">
+                  <button class="btn btn text-white" style="width: 40px; height: 40px;">
+                   >
+                  </button>
+                 </div>
+            </div>
+
+          </div>
+          <div class="row  ml-5">
+            <div class="card" style="width: 18rem;">
+              <div class="pojok-kiri">
+                <a class="text-white">Online</a>
+              </div>
+              <div class="ribbon-wrapper ribbon">
+                <div class="ribbon text-white" style="background-color: #EB5757">
+                  Women
+                </div>
+              </div>
+               <img class="card-img-top" src="asset/gambar.jpeg" >
+               <div class="card-body">
+                 <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+                 <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+                     26 NOVEMBER 2021 5:00 SORE</p>
+                     <div class="personal">
+                       <p class="text-bold">
+                       <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                       Raeihan Alvaro</p>
+                     </div>
+                 <p class="text-bold mb-0">Price</p>
+                 <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+                 <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+                 <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+                 <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+                 <div class="arrow">
+                   <button class="btn btn text-white" style="width: 40px; height: 40px;">
+                     >
+                   </button>
+                 </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="row mt-5 ml-2">
+      <div class="card" style="width: 18rem;">
+        <div class="pojok-kiri">
+          <a class="text-white">Online</a>
+        </div>
+        <div class="ribbon-wrapper ribbon">
+          <div class="ribbon bg-primary">
+            Umum
+          </div>
+        </div>
+         <img class="card-img-top" src="asset/gambar.jpeg" >
+         <div class="card-body">
+           <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+           <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+               26 NOVEMBER 2021 5:00 SORE</p>
+               <div class="personal">
+                 <p class="text-bold">
+                 <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                 Raeihan Alvaro</p>
+               </div>
+           <p class="text-bold mb-0">Price</p>
+           <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+           <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+           <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+           <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+           <div class="arrow">
+             <button class="btn btn text-white" style="width: 40px; height: 40px;">
+              >
+             </button>
+           </div>
+      </div>
+
+    </div>
+    <div class="row ml-5 ">
+      <div class="card" style="width: 18rem;">
+        <div class="pojok-kiri">
+          <a class="text-white">Online</a>
+        </div>
+        <div class="ribbon-wrapper ribbon">
+          <div class="ribbon text-white" style="background-color: #F2994A">
+            Men
+          </div>
+        </div>
+         <img class="card-img-top" src="asset/gambar.jpeg" >
+         <div class="card-body">
+           <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+           <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+               26 NOVEMBER 2021 5:00 SORE</p>
+               <div class="personal">
+                 <p class="text-bold">
+                 <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                 Raeihan Alvaro</p>
+               </div>
+           <p class="text-bold mb-0">Price</p>
+           <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+           <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+           <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+           <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+           <div class="arrow">
+            <button class="btn btn text-white" style="width: 40px; height: 40px;">
+             >
+            </button>
+           </div>
+      </div>
+
+    </div>
+    <div class="row  ml-5">
+      <div class="card" style="width: 18rem;">
+        <div class="pojok-kiri">
+          <a class="text-white">Online</a>
+        </div>
+        <div class="ribbon-wrapper ribbon">
+          <div class="ribbon text-white" style="background-color: #EB5757">
+            Women
+          </div>
+        </div>
+         <img class="card-img-top" src="asset/gambar.jpeg" >
+         <div class="card-body">
+           <h5 class="card-title font-weight-bold">Training IOS Swift Basic</h5>
+           <p class="card-text" style="color: #BDBDBD;">17 NOVEMBER 2021 1:00 SIANG TO <br>
+               26 NOVEMBER 2021 5:00 SORE</p>
+               <div class="personal">
+                 <p class="text-bold">
+                 <img src="asset/pp.jpg" class="card-img-top rounded-circle mt-1 ml-1" alt="gambar" style="width:40px;height:40px;">
+                 Raeihan Alvaro</p>
+               </div>
+           <p class="text-bold mb-0">Price</p>
+           <del style="color: #BDBDBD; font-size: 19px;" class="mt-0 text-poppins text-bold">Rp 299.000</del>
+           <div class="text-poppins text-bold mt-0" style="font-size:23px; color: #219653;">Rp 199.000</div>
+           <p class="mt-1 mb-0">Tiket Tersisa: 07</p>
+           <p class="mt-0" style="color: #219653; font-weight: 500;">10 Points</p>
+           <div class="arrow">
+             <button class="btn btn text-white" style="width: 40px; height: 40px;">
+               >
+             </button>
+           </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+  <section class="mb-5">
+
+  </section>
+  </body>
+</html>
+
+<!-- footer -->
